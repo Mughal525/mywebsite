@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="" type="image/png">
+    <link rel="stylesheet" href="books.css">
+    <title>Books Library</title>
+
+</head>
+<body>
+    <div class="header">
+        <div class="logo-container">
+           <!-- Add your logo or book icon here -->
+            <div class="book-icon">📚</div>
+            <div class="logo-text">Class-9<sup>th</sup>Books Library</div>
+        </div>
+    </div>
+
+    <!-- Theme toggle button -->
+    <button id="theme-toggle" onclick="toggleTheme()">🌙</button>
+
+    <!-- Search bar -->
+    <div class="search-container">
+        <input type="text" id="search" placeholder="Search for books..." onkeyup="searchBooks()">
+    </div>
+
+    <div style="display: flex; justify-content: center; align-items: center; height: auto;">
+        <img src="Class Ninth.png" alt="Books-library" width="800">
+    </div>
+ 
+    
+</div>
+
+    <!-- Book container -->
+    <div class="container" id="book-container">
+        <div class="book">
+            <div class="book-info">
+                <img src="Mathematics.842042e6.svg" alt="Mathematics">
+                
+
+                <p>Mathematics Class-9</p>
+            </div>
+            <div class="book-actions">
+                <a href="math class ninth 2025.pdf" class="view-book-btn">View Book</a>
+                <a href="math class ninth 2025.pdf">Download</a>
+            </div>
+        </div>
+        <div class="book">
+            <div class="book-info">
+                <img src="Physics.cbe45828.svg" alt="Physics">
+                
+                <p>Physics Class-9</p>
+            </div>
+            <div class="book-actions">
+                <a href="physics new book 2025.pdf" class="view-book-btn">View Book</a>
+                <a href="physics new book 2025.pdf">Download</a>
+            </div>
+        </div>
+        <div class="book">
+            <div class="book-info">
+                <img src="Practical.fc4a3e92.svg" alt="Chemistry">
+              
+
+                <p>Chemistry Class-9</p>
+            </div>
+            <div class="book-actions">
+                <a href="Chemistry-9 complete-2025-26.pdf" class="view-book-btn">View Book</a>
+                <a href="Chemistry-9 complete-2025-26.pdf">Download</a>
+            </div>
+        </div>
+        <div class="book">
+            <div class="book-info">
+                <img src="computer.png" width="65px" alt="computer science">
+                
+
+                <p>Computer Class-9</p>
+            </div>
+            <div class="book-actions">
+                <a href="Computer-9 complete_compressed.pdf" class="view-book-btn">View Book</a>
+                <a href="Computer-9 complete_compressed.pdf">Download</a>
+            </div>
+        </div>
+        <div class="book">
+            <div class="book-info">
+                <img src="Chemistry.d7c25d5f.svg" alt="Biology">
+               
+
+                <p>Biology Class-9</p>
+            </div>
+            <div class="book-actions">
+                <a href="biology 9_2025-26.pdf" class="view-book-btn">View Book</a>
+                <a href="biology 9_2025-26.pdf">Download</a>
+            </div>
+        </div>
+        <div class="book">
+            <div class="book-info">
+                <img src="Urdu.e000afb9.svg" alt="Urdu">
+                
+
+                <p>Urdu Class-9</p>
+            </div>
+            <div class="book-actions">
+                <a href="URDU TEXTBOOK CLASS 9  2025-26 WATERMARK.pdf" class="view-book-btn">View Book</a>
+                <a href="URDU TEXTBOOK CLASS 9  2025-26 WATERMARK.pdf">Download</a>
+            </div>
+        </div>
+        <div class="book">
+            <div class="book-info">
+                <img src="English.20872496.svg" alt="Physics">
+                
+                <p>English Class-9</p>
+            </div>
+            <div class="book-actions">
+                <a href="English 9 2025-26 WATERMARK.pdf" class="view-book-btn">View Book</a>
+                <a href="English 9 2025-26 WATERMARK.pdf">Download</a>
+            </div>
+        </div>
+        <div class="book">
+            <div class="book-info">
+                <img src="Islamic Studies.9a2c4558.svg" alt="islamiyat">
+               
+            
+                <p>Islamiyat Class-9</p>
+            </div>
+            <div class="book-actions">
+                <a href="Islamiat 9 SNC 2024-25_compressed.pdf" class="view-book-btn">View Book</a>
+                <a href="Islamiat 9 SNC 2024-25_compressed.pdf">Download</a>
+            </div>
+            </div>
+
+        <div class="book">
+            <div class="book-info">
+                <img src="al-quran-indonesia-svgrepo-com.svg" alt="translation of holy quran">
+                
+
+                <p>Translation Of <br> Holy Quran Class-9</p>
+            </div>
+            <div class="book-actions">
+                <a href="Tarjuma-tul-Quran 2025.pdf" class="view-book-btn">View Book</a>
+                <a href="Tarjuma-tul-Quran 2025.pdf">Download</a>
+            </div>
+        </div>
+        <!-- Add more books here -->
+    </div>
+      <!-- Overlay background -->
+      <div id="overlay" class="overlay"></div>
+
+      <div id="overlay" class="overlay"></div>
+      <div id="thankYouPopup" class="popup" role="dialog" aria-labelledby="popupTitle" aria-hidden="true">
+          <p id="popupTitle">Thank you for your feedback! Your response helps us improve. 😊</p>
+      </div>
+  
+      <footer>
+          <div class="footer-container">
+              <div class="footer-info">
+                  <div class="footer-logo">
+                      <img src="book2.png" alt="Book Icon" class="footer-icon">
+                      <h3>Class-9<sup>th</sup> Books Library</h3>
+                  </div>
+                  <p>&copy;2025 Class-9<sup>th</sup> Books Library. All rights reserved.</p>
+                  <div class="social-media">
+                      <a href="https://www.facebook.com/" class="social-icon" target="_blank">Facebook</a>
+                      <a href="https://twitter.com/" class="social-icon" target="_blank">Twitter</a>
+                      <a href="https://www.instagram.com/" class="social-icon" target="_blank">Instagram</a>
+                  </div>
+              </div>
+  
+              <div class="feedback-form">
+                  <h3>We Value Your Feedback</h3>
+                  <form id="feedback-form" action="#" method="POST">
+                      <textarea name="feedback" id="feedback" rows="4" placeholder="Share your feedback..." required></textarea>
+                      <button type="submit" class="submit-btn">Submit</button>
+                  </form>
+              </div>
+          </div>
+      </footer>
+  
+      <script>
+          // Toggle theme between dark and light mode
+          function toggleTheme() {
+              document.body.classList.toggle('dark-mode');
+              const button = document.getElementById('theme-toggle');
+              if (document.body.classList.contains('dark-mode')) {
+                  button.textContent = '🌙';
+              } else {
+                  button.textContent = '🌞';
+              }
+          }
+  
+          // Search books by title
+          function searchBooks() {
+              const searchInput = document.getElementById('search').value.toLowerCase();
+              const books = document.querySelectorAll('.book');
+              books.forEach(book => {
+                  const title = book.querySelector('p').textContent.toLowerCase();
+                  if (title.includes(searchInput)) {
+                      book.style.display = '';
+                  } else {
+                      book.style.display = 'none';
+                  }
+              });
+          }
+  
+    
+        document.getElementById("feedback-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            document.getElementById("overlay").style.display = "block";
+            document.getElementById("thankYouPopup").style.display = "block";
+            document.getElementById("thankYouPopup").setAttribute("aria-hidden", "false");
+            document.getElementById("feedback").value = ""; //*clear the feedback
+            setTimeout(() => {
+                document.getElementById("overlay").style.display = "none";
+                document.getElementById("thankYouPopup").style.display = "none";
+                document.getElementById("thankYouPopup").setAttribute("aria-hidden", "true");
+            }, 3000);
+        });
+        
+    </script>
+    
+</body>
+</html>
